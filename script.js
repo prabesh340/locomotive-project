@@ -6,12 +6,13 @@ tl.to(".yellow",{
 })
 tl.to("video,.loader",{
     top:"-100%",
-    delay:0.7,
+    delay:0.6,
 })
 tl.from(".page1 h1",{
     color:"#fff",
     ease:"expo.out"
 },"=-0.4")
-tl.to("video",{
-    display:"none"
-},)
+
+tl.to(".loader",{
+    opacity:0,
+})

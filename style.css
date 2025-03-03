@@ -19,6 +19,7 @@ html , body{
     background-color:black;
     position: absolute;
     color: #fff;
+    z-index: 8;    
 }
 .loader h1{
     text-align: center;
