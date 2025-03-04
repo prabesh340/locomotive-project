@@ -14,6 +14,9 @@ body {
   height: 100%;
   width: 100%;
 }
+.main{
+    background-color: #000;
+}
 .loader {
   height: 100vh;
   width: 100%;
@@ -61,9 +64,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+
 }
 .page1 h1 {
-  text-align: center;
   font-size: 6vw;
   line-height: 4.5vw;
   font-weight: 500;
@@ -80,4 +84,26 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #fff;
+}
+.nav{
+    position: absolute;
+    width: 100%;
+    padding: 2.5vw 3vw;
+    z-index:2;
+}
+
+@media (max-width:600px) {
+  .page1 h1 {
+    position: absolute;
+    top: 44.07%;
+    font-size: 8vw;
+    line-height:6vw;
+    letter-spacing: -2px;
+  }
+  .text h1 {
+    font-size: 8vw;
+    line-height:6vw;
+    letter-spacing: -2px;
+
+  }
 }

@@ -7,7 +7,7 @@ const loader = () => {
   });
   tl.to("video,.loader", {
     top: "-100%",
-    delay: 0.6,
+    delay: 0.8,
   });
   tl.from(
     ".text h1",
@@ -32,4 +32,5 @@ loader();
 const scroll = new LocomotiveScroll({
   el: document.querySelector("[data-scroll-container]"),
   smooth: true,
+  
 });
