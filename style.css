@@ -117,6 +117,8 @@ font-weight: 650;
     letter-spacing: -2px;
   }
   .text h1 {
+    position: absolute;
+    top: 44.07%;
     font-size: 8vw;
     line-height:6vw;
     letter-spacing: -2px;
