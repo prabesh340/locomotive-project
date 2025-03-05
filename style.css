@@ -24,6 +24,7 @@ body {
   position: absolute;
   color: #fff;
   z-index: 8;
+  /* display: none; */
 }
 .text {
   position: absolute;
@@ -106,8 +107,22 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 1vw;
 color: black;
 font-weight: 650;
-}
+transition: all 0.1s ease-out;
 
+}.nav div a:hover{
+  color: #fff;
+}
+.nav_link i{
+display: none;
+}
+svg path{
+  transition: all 0.1s ease-out;
+}
+svg:hover path{
+  fill:white;
+  cursor: pointer;
+
+}
 @media (max-width:600px) {
   .page1 h1 {
     position: absolute;
@@ -124,4 +139,17 @@ font-weight: 650;
     letter-spacing: -2px;
 
   }
+  .nav_link i{
+    display: initial;
+    font-size: 5vw;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    }
+  
+    .nav_link i:hover{
+      color: #fff;
+    }
+    .nav_link a{
+      display: none;
+      }
 }
