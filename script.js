@@ -34,3 +34,9 @@ const scroll = new LocomotiveScroll({
   smooth: true,
   
 });
+const body = document.querySelector("body");
+body.style.display="none"
+window.addEventListener("load",() => {
+  body.style.display="initial"
+
+})
