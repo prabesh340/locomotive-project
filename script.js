@@ -34,10 +34,13 @@ const scroll = new LocomotiveScroll({
   
 });
 const body = document.querySelector("body");
-body.style.display="none"
+body.style.display="none";
+body.style.opacity=0;
+
 window.addEventListener("load",() => {
   gsap.to("body",{
     display:"initial",
+    opacity:1,
     delay:1
   })
   setTimeout(() => {
