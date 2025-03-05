@@ -27,7 +27,6 @@ const loader = () => {
     "=-0.2"
   );
 };
-loader();
 
 const scroll = new LocomotiveScroll({
   el: document.querySelector("[data-scroll-container]"),
@@ -37,6 +36,14 @@ const scroll = new LocomotiveScroll({
 const body = document.querySelector("body");
 body.style.display="none"
 window.addEventListener("load",() => {
-  body.style.display="initial"
+  gsap.to("body",{
+    display:"initial",
+    delay:1
+  })
+  setTimeout(() => {
+    loader();
+
+  },1220)
+
 
 })
