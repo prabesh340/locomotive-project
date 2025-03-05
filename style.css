@@ -139,15 +139,20 @@ svg:hover path{
     letter-spacing: -2px;
 
   }
+  .nav{
+    padding: 5vw 5vw;
+
+  }
   .nav_link i{
     display: initial;
-    font-size: 5vw;
+    font-size: 7vw;
     cursor: pointer;
     transition: all 0.1s ease-out;
     }
   
     .nav_link i:hover{
       color: #fff;
+      user-select: none;
     }
     .nav_link a{
       display: none;
